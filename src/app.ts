@@ -14,7 +14,7 @@ app.use(logger("dev"));
 dotenv.config();
 
 app.get('/', (req, res) => {
-  res.formatter.ok("Welcome to Nearby-Eats - Backend")
+  return res.formatter.ok("Welcome to playground - backend")
 });
 
 app.listen(port, () => {
