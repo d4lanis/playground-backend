@@ -26,10 +26,15 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "@sentry/node": "^7.67.0",
+    "@sentry/types": "^7.68.0",
+    "@types/winston": "^2.4.4",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-response-formatter": "^2.0.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "winston": "^3.10.0",
+    "winston-transport-sentry-node": "^2.7.0"
   }
 }
