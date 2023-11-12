@@ -3,8 +3,9 @@ import cors from 'cors';
 import { responseEnhancer } from 'express-response-formatter';
 import logger from 'morgan';
 import * as dotenv from 'dotenv';
-import { port } from './const/const';
+
 const app = express();
+const port = process.env.PORT;
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
@@ -18,5 +19,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
+  console.log(port);
   return console.log(`Express is listening at http://localhost:${port}`);
 });
